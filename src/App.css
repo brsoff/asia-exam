@@ -1,0 +1,67 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app-container {
+  max-width: 800px;
+  width: 66%;
+  margin: 0 auto;
+}
+
+svg {
+  width: 100%;
+}
+
+path.body-part {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+path.body-part:hover {
+  fill: #2E9AFE;
+}
+
+
+.button {
+  cursor: pointer;
+}
+
+#modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#point-modal {
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.close-modal {
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+}
+
+.scores button {
+  font-size: 32px;
+  margin-right: 10px;
+  background-color: #2E9AFE;
+  color: #ffffff;
+}
+
+.scores button:hover {
+  background-color: #045FB4;
+}
