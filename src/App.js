@@ -5,7 +5,7 @@ import scoreSheet from './score-sheet.js';
 import ExamCategorySelect from './exam-category-select.js';
 import ExamDetails from './exam-details.js';
 import {fromJS} from 'immutable';
-import './app.css';
+import './App.css';
 
 const VALID_MOTOR_IDS = {
   C5: 'UPPER',
