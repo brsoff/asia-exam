@@ -1,17 +1,31 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {OrderedMap} from 'immutable';
+var d3 = require("d3");
 
 export default class Body extends Component {
   static propTypes = {
     scoreSheet: PropTypes.instanceOf(OrderedMap),
     activeCategory: PropTypes.string,
-    activeTest: PropTypes.string
+    activeTest: PropTypes.string,
+    selectedId: PropTypes.string
   };
+
+  componentDidMount() {
+    if (this.props.selectedId) {
+      const svg = document.getElementById(this.props.selectedId);
+    }
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.props.selectedId) {
+      const svg = document.getElementById(this.props.selectedId);
+    }
+  }
 
   render() {
     return (
-      <div id="svg-wrappers">
+      <div className="svg-wrappers">
         <svg version="1.1" id="rear" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
            viewBox="0 0 375.2 936.9" enableBackground="new 0 0 375.2 936.9">
         <path fill="#FFFFFF" d="M24.2,0c117,0,234,0,351,0c0,312.3,0,624.6,0,936.9c-117,0-234,0-351,0C24.2,624.6,24.2,312.3,24.2,0z

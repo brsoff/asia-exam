@@ -15,20 +15,28 @@ body.no-scroll {
 }
 
 .app-container {
-  padding: 20px 0;
-  max-width: 1440px;
-  width: 90%;
+  padding: 0;
+  width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 
-.exam-details {
-  float: left;
+.exam-details,
+#guided-exam-panel {
+  background-color: #FFFFF0;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 40%;
+  border-right: 1px solid #ccc;
 }
 
 .exam-body {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 55%;
 }
 
@@ -142,6 +150,7 @@ button {
 }
 
 .side-panel {
+  background-color: #fff;
   width: 48%;
   padding: 20px;
   border: 1px solid #ccc;
@@ -252,6 +261,7 @@ table.scoresheet,
 table.scoresheet td {
   border: 1px solid #D8D8D8;
   border-collapse: collapse;
+  background-color: #fff;
 }
 
 table.scoresheet td {
@@ -283,6 +293,9 @@ table.scoresheet td.score.value-NT,
 table.patient-details {
   background-color: #f2f2f2;
   padding: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 14px;
 }
+
+.svg-wrappers { overflow: auto; }
